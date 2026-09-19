@@ -287,3 +287,181 @@ h2 strong {
     padding: 70px 22px 84px;
   }
 }
+
+/*
+
+Values
+
+*/
+
+#values.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+
+PRICING
+
+*/
+
+#pricing.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 88px 34px 110px;
+  text-align: center;
+}
+
+.pricing {
+  background: #fffaf7;
+  padding: 96px 34px 120px;
+  text-align: center;
+}
+.pricing-heading {
+  margin-bottom: 54px;
+}
+.pricing-label {
+  color: var(--purple);
+}
+.pricing-grid {
+  align-items: stretch;
+  border: 1px solid #e6dfd9;
+  border-radius: 8px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 24px;
+  text-align: left;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 570px;
+  overflow: hidden;
+}
+.personal-plan,
+.enterprise-plan {
+  background: #fff;
+  border: 1px solid #eee8e3;
+}
+.business-plan {
+  background: #2454d4;
+  color: #fff;
+}
+.plan-strip {
+  flex: 0 0 8px;
+}
+.personal-plan .plan-strip {
+  background: #75d69b;
+}
+.enterprise-plan .plan-strip {
+  background: #ef5b57;
+}
+.plan-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 42px 34px 36px;
+}
+.plan-header {
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.personal-plan .plan-header,
+.enterprise-plan .plan-header {
+  border-color: #e7e1dc;
+}
+.plan-header h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.plan-price {
+  color: #111827;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 22px;
+}
+.business-plan .plan-price {
+  color: #fff;
+}
+.plan-period {
+  color: #a5aab5;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-top: 8px;
+}
+.business-plan .plan-period {
+  color: #d7e1ff;
+}
+.plan-details {
+  padding-top: 34px;
+  text-align: center;
+}
+.plan-details h4 {
+  color: #111827;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+.business-plan .plan-details h4 {
+  color: #fff;
+}
+.plan-details ul {
+  list-style: none;
+  padding: 22px 0 0;
+}
+.plan-details li {
+  color: #9298a3;
+  line-height: 1.5;
+  padding: 7px 0;
+}
+.business-plan .plan-details li {
+  color: #d7e1ff;
+}
+.plan-button {
+  align-self: center;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-top: auto;
+  padding: 15px 28px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+.plan-button:hover {
+  opacity: 0.86;
+  transform: translateY(-2px);
+}
+.personal-button {
+  background: #75d69b;
+  color: #fff;
+}
+.business-button {
+  background: #fff;
+  color: #2454d4;
+}
+.enterprise-button {
+  background: #ef5b57;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .pricing {
+    padding: 70px 22px 90px;
+  }
+}
